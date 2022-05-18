@@ -1,8 +1,6 @@
 name: shell-cmds
 
-on:
-  push:
-  - master 
+on: [push]
 
 jobs:
   runs_shell_command:
