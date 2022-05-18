@@ -1,0 +1,11 @@
+name: shell-cmds
+
+on:
+  push:
+  - master 
+
+jobs:
+  runs_shell_command:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo 'Hello World'
