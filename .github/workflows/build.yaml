@@ -8,4 +8,4 @@ jobs:
   runs_shell_command:
     runs-on: ubuntu-latest
     steps:
-    - run: echo 'Hello World'
+    - run: echo 'Hello Bye'
