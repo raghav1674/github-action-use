@@ -9,6 +9,6 @@ jobs:
   runs_shell_command:
     runs-on: self-hosted
     steps:
-    - run: echo 'Hello Master'
+    - run: echo 'Hello Self hosted'
     - run: import this
       shell: python
