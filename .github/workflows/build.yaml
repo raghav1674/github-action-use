@@ -12,3 +12,11 @@ jobs:
     - run: echo 'Hello Self hosted'
     - run: import this
       shell: python
+  runss:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/hello-world-javascript-action@v1
+      id: js 
+      with:
+        who-to-greet: raghav
+    - run: echo "${{ steps.js.outputs.time }}"
