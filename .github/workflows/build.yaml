@@ -9,7 +9,7 @@ jobs:
   runs_shell_command:
     runs-on: self-hosted
     steps:
-    - run: echo 'Hello Self hosted'
+    - run: echo 'Hello Self s'
     - run: import this
       shell: python
   runss:
