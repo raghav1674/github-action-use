@@ -7,7 +7,7 @@ on:
 
 jobs:
   runs_shell_command:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - run: echo 'Hello Self s'
     - run: import this
