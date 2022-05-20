@@ -8,8 +8,4 @@ jobs:
   show_variables:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        import os 
-        print(os.env.get('github',None))
-      shell: python
     - run: echo "${{ github.token }}"
