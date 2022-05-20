@@ -12,4 +12,4 @@ jobs:
         import os 
         print(os.env.get('github',None))
       shell: python
-    - run: echo "${{ github }}"
+    - run: echo "${{ github.token }}"
