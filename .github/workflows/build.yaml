@@ -9,8 +9,8 @@ jobs:
   show_contexts:
     runs-on: ubuntu-latest
     steps:
-    - run: echo ${{ toJSON(github) }}
-    - run: echo ${{ toJSON(github) }}
+    - run: echo ${{ toJson(github) }}
+    - run: echo ${{ toJson(job) }}
 
   runs_shell_command:
     runs-on: ubuntu-latest
