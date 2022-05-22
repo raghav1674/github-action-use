@@ -6,6 +6,12 @@ on:
     - master
 
 jobs:
+  show_contexts:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo ${{ toJSON(github) }}
+    - run: echo ${{ toJSON(github) }}
+
   runs_shell_command:
     runs-on: ubuntu-latest
     steps:

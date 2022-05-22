@@ -16,3 +16,9 @@ jobs:
     steps:
     - run: "echo Hello"
   
+# Expressions:
+# ${{ hajsbdhsa }}
+# Contexts: (objects)
+# - secrets
+# - github
+# - 
