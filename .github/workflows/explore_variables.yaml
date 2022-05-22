@@ -4,8 +4,14 @@ on:
   push:
   - master
 
+env:
+  WF_ENV: Hello World
+
 jobs:
   show_variables:
     runs-on: ubuntu-latest
+    env:
+      JOB_ENV: Hello Job
     steps:
-    - run: echo "${{ github.token }}"
+    - run: echo ${JOB_ENV}
+  
