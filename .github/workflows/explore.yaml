@@ -1,6 +1,7 @@
 name: sadsad 
 
 on:
+  workflow_dispatch:
   push:
   - master
 
