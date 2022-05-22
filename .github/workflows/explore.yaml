@@ -3,7 +3,8 @@ name: sadsad
 on:
   workflow_dispatch:
   push:
-  - master
+    branches:
+    - master
 
 env:
   WF_ENV: Hello World
