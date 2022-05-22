@@ -13,5 +13,5 @@ jobs:
     env:
       JOB_ENV: Hello Job
     steps:
-    - run: "echo ${JOB_ENV}"
+    - run: "echo Hello"
   
