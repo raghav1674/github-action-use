@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo '${{ toJson(github) }}'
-    - run: echo '${{ toJson(job) }}'
+    - run: echo '${{ toJson(secrets) }}'
 
   runs_shell_command:
     runs-on: ubuntu-latest
