@@ -8,18 +8,18 @@ on:
 permissions:
       id-token: write
 jobs:
-  show_contexts:
+  show_qa:
+    environment: qa
     runs-on: ubuntu-latest
     steps:
-    - run: echo '${{ toJson(github) }}'
-    - run: echo '${{ toJson(secrets) }}'
-
-  runs_shell_command:
+    - run: echo  ${{ secrets.AWS_ROLE_TO_ASSUME }}
+    
+  show_prod:
+    environment: prod
     runs-on: ubuntu-latest
     steps:
-    - run: echo 'Hello Self s'
-    - run: import this
-      shell: python
+    - run: echo  ${{ secrets.AWS_ROLE_TO_ASSUME }}
+    
   runss:
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +28,7 @@ jobs:
       with:
         who-to-greet: raghav
     - run: echo "${{ steps.js.outputs.time }}"
+    
     
     - uses: aws-actions/configure-aws-credentials@v1
       with:
