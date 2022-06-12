@@ -5,7 +5,8 @@ on:
   push:
     branches:
     - master
-
+permissions:
+      id-token: write
 jobs:
   show_contexts:
     runs-on: ubuntu-latest
